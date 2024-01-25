@@ -10,7 +10,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "FaceDetectorLibrary_iOS",
-            targets: ["MediaPipeTasksVision"]),
+            targets: ["FaceDetectorLibrary_iOS", "MediaPipeTasksVision"]),
     ],
     targets: [
         .target(name: "FaceDetectorLibrary_iOS",
