@@ -15,6 +15,8 @@ let package = Package(
             targets: ["MediaPipeTasksVision"]),
     ],
     targets: [
+        .target(name: "FaceDetectorLibrary",
+                dependencies: ["MediaPipeTasksVision"]),
         .binaryTarget(
             name: "MediaPipeTasksVision",
             path: "MediaPipeTasksVision.xcframework")
