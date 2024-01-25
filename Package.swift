@@ -4,18 +4,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "FaceDetectorLibrary",
-    platforms: [
-            .iOS(.v15),
-        ],
+    name: "FaceDetectorLibrary_iOS",
+    defaultLocalization: "pt",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "FaceDetectorLibrary",
+            name: "FaceDetectorLibrary_iOS",
             targets: ["MediaPipeTasksVision"]),
     ],
     targets: [
-        .target(name: "FaceDetectorLibrary",
+        .target(name: "FaceDetectorLibrary_iOS",
                 dependencies: ["MediaPipeTasksVision"]),
         .binaryTarget(
             name: "MediaPipeTasksVision",
